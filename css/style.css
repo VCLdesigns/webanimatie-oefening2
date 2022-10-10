@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: antiquewhite;
+}
+
+#container{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#container div{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#finn{
+    background-image: url(../img/finn.gif);
+}
+
+#jake{
+    background-image: url(../img/jake.gif);
+}
+#taco{
+    background-image: url(../img/taco.gif);
+}
