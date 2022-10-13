@@ -1,33 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
-#container{
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-#container div{
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
+#container div {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 2px 2px 3px 3px #333;
+  border: solid 2px white;
+  margin-top: 100px;
 }
-#finn{
-    background-image: url(../img/finn.gif);
+#finn {
+  background-image: url(../img/finn.gif);
 }
 
-#jake{
-    background-image: url(../img/jake.gif);
+#jake {
+  background-image: url(../img/jake.gif);
 }
-#taco{
-    background-image: url(../img/taco.gif);
+#taco {
+  background-image: url(../img/taco.gif);
+}
+
+.startfinn {
+  background-image: url(../img/finn.gif);
+}
+
+.startjake {
+  background-image: url(../img/jake.gif);
+}
+
+.starttaco {
+  background-image: url(../img/taco.gif);
+}
+#container div:hover {
+  animation: hover 2s linear;
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes hover {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.5) rotate(360deg);
+  }
+  50% {
+    transform: scale(2) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.5) rotate(-360deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
 }

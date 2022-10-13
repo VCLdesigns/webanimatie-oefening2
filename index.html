@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,33 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Oefening 2</title>
 </head>
+
 <body>
     <div id="container">
         <div id="finn"></div>
         <div id="jake"></div>
         <div id="taco"></div>
     </div>
+    <script>
+        var finn = document.querySelector("#finn");
+        var jake = document.querySelector("#jake");
+        var taco = document.querySelector("#taco");
+        var body = document.querySelector("body");
+
+        finn.addEventListener("click", startfinn);
+        jake.addEventListener("click", startjake);
+        taco.addEventListener("click", starttaco);
+        function startfinn(evt) {
+            body.classList.add("startfinn");
+        }
+        function startjake(evt) {
+            body.classList.add("startjake");
+        }
+        function starttaco(evt) {
+            body.classList.add("starttaco");
+        }
+
+    </script>
 </body>
+
 </html>
